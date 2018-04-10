@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpressionLinq", "ExpressionLinq\ExpressionLinq.csproj", "{6FA48E63-389C-41A4-A2C6-59EA4AE816EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTest", "ExpressionTest\ExpressionTest.csproj", "{093E51F8-6636-4FCE-8364-73AAB063863A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FA48E63-389C-41A4-A2C6-59EA4AE816EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FA48E63-389C-41A4-A2C6-59EA4AE816EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FA48E63-389C-41A4-A2C6-59EA4AE816EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FA48E63-389C-41A4-A2C6-59EA4AE816EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093E51F8-6636-4FCE-8364-73AAB063863A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093E51F8-6636-4FCE-8364-73AAB063863A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093E51F8-6636-4FCE-8364-73AAB063863A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093E51F8-6636-4FCE-8364-73AAB063863A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6970F85-64BF-443E-A5BE-DB516F167AB2}
+	EndGlobalSection
+EndGlobal
