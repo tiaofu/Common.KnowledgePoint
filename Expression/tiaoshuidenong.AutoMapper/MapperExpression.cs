@@ -14,7 +14,7 @@ using System.Reflection;
 
 namespace tiaoshuidenong.AutoMapper
 {
-    internal sealed class MapperExpressionCommon
+    internal sealed class MapperExpression
     {
         /// <summary>
         /// structure func
