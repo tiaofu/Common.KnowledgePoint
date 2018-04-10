@@ -1,3 +1,4 @@
-Debug/  
-Release/  
-obj/  
+Debug/
+Release/
+obj/
+.vs/

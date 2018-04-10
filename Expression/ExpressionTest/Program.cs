@@ -1,9 +1,18 @@
-﻿using System;
+﻿/*********************************************************
+ * CopyRight: tiaoshuidenong. 
+ * Author: tiaoshuidenong
+ * Address: wuhan
+ * Create: 2018-04-10 17:44:16
+ * Modify: 2018-04-10 17:44:16
+ * Description: 
+ *********************************************************/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ExpressionLinq;
+using tiaoshuidenong.AutoMapper;
 
 namespace ExpressionTest
 {
@@ -32,7 +41,11 @@ namespace ExpressionTest
             sc.StartAge = 13;
             sc.EndAge = 49;
 
-            List<Student> stuList = new List<Student>() { student1, student2, student3, student4, student5 };            
+            StudentView view = Mapper<Student, StudentView>.AutoMapper(student1, t => t.Name = student1.Name + "view");
+
+            Console.WriteLine($"View, Name:{view.Name},Age:{view.Age}");
+
+            List<Student> stuList = new List<Student>() { student1, student2, student3, student4, student5 };
             var result = stuList.AsQueryable().Search(sc).ToList();
             foreach (var item in result)
             {
