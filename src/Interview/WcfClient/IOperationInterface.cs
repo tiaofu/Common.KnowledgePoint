@@ -12,7 +12,7 @@ using System.ServiceModel;
 namespace WcfClient
 {
     [ServiceContract]
-    public interface IOperationInterface
+    public interface IOperationInterface : IClientChannel
     {
         [OperationContract]
         string Call(int num1, int num2);

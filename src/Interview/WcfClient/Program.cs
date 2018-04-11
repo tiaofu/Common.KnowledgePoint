@@ -21,8 +21,14 @@ namespace WcfClient
         {
             //创建连接
             IOperationInterface service = InvokeContext.CreateWCFServiceByURL<IOperationInterface>("net.tcp://127.0.0.1:8888/Call");
+
+            Console.Write(service.State);
             var result = service.Call(1, 3);
             Console.WriteLine(result);
+            //service.Close();
+            
+            var result2 = service.Call(2, 3);
+            Console.WriteLine(result2);
             Console.WriteLine("调用结束!");
             Console.Read();
         }
