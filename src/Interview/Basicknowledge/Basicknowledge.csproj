@@ -45,6 +45,7 @@
     <Compile Include="Animal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sortalgorithm.cs" />
     <Compile Include="Student.cs" />
   </ItemGroup>
   <ItemGroup>
