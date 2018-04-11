@@ -1,0 +1,26 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase
+
+@{
+    ViewBag.Title = @Model;
+}
+
+@section style{
+   
+}
+<div id="content">
+    我是第一个Nancy应用
+</div>
+<a href="/Home/Download" target="_blank">下载使用说明word文件</a>
+
+@section scripts{
+    <script>
+        $(function () {
+            $("#content").css({ 'font-size': '26px', 'background-color': 'red' });
+
+            //下载文件
+            $("#downlad_file").on("click", function () {
+
+            });
+        });
+    </script>
+}
