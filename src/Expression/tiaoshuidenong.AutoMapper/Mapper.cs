@@ -33,7 +33,7 @@ namespace tiaoshuidenong.AutoMapper
             Type[] types = new Type[] { typeof(TIn) };
             MemberInitExpression memberInitExpression;
             List<ParameterExpression> parameterExpressionList;
-            MapperExpressionCommon.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
+            MapperExpression.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
             //通过先构造一个委托类型来创建一个 LambdaExpression
             Expression<Func<TIn, TOut>> lambda = Expression.Lambda<Func<TIn, TOut>>(memberInitExpression, parameterExpressionList);
             //将表达式树编译为可执行委托
@@ -59,7 +59,7 @@ namespace tiaoshuidenong.AutoMapper
             Type[] types = new Type[] { typeof(TIn1), typeof(TIn2) };
             MemberInitExpression memberInitExpression;
             List<ParameterExpression> parameterExpressionList;
-            MapperExpressionCommon.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
+            MapperExpression.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
             Expression<Func<TIn1, TIn2, TOut>> lambda = Expression.Lambda<Func<TIn1, TIn2, TOut>>(memberInitExpression, parameterExpressionList);
             return lambda.Compile();
         }
@@ -83,7 +83,7 @@ namespace tiaoshuidenong.AutoMapper
             Type[] types = new Type[] { typeof(TIn1), typeof(TIn2), typeof(TIn3) };
             MemberInitExpression memberInitExpression;
             List<ParameterExpression> parameterExpressionList;
-            MapperExpressionCommon.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
+            MapperExpression.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
             Expression<Func<TIn1, TIn2, TIn3, TOut>> lambda = Expression.Lambda<Func<TIn1, TIn2, TIn3, TOut>>(memberInitExpression, parameterExpressionList);
             return lambda.Compile();
         }
@@ -107,7 +107,7 @@ namespace tiaoshuidenong.AutoMapper
             Type[] types = new Type[] { typeof(TIn1), typeof(TIn2), typeof(TIn3), typeof(TIn4) };
             MemberInitExpression memberInitExpression;
             List<ParameterExpression> parameterExpressionList;
-            MapperExpressionCommon.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
+            MapperExpression.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
             Expression<Func<TIn1, TIn2, TIn3, TIn4, TOut>> lambda = Expression.Lambda<Func<TIn1, TIn2, TIn3, TIn4, TOut>>(memberInitExpression, parameterExpressionList);
             return lambda.Compile();
         }
@@ -131,7 +131,7 @@ namespace tiaoshuidenong.AutoMapper
             Type[] types = new Type[] { typeof(TIn1), typeof(TIn2), typeof(TIn3), typeof(TIn4), typeof(TIn5) };
             MemberInitExpression memberInitExpression;
             List<ParameterExpression> parameterExpressionList;
-            MapperExpressionCommon.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
+            MapperExpression.GetFunc(typeof(TOut), types, out memberInitExpression, out parameterExpressionList);
             Expression<Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>> lambda = Expression.Lambda<Func<TIn1, TIn2, TIn3, TIn4, TIn5, TOut>>(memberInitExpression, parameterExpressionList);
             return lambda.Compile();
         }
