@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file contains job definitions in schema version 2.0 format -->
+
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+
+  <schedule>
+    <!--新能源车同步 任务配置-->
+    <!--<job>
+      <name>CopyNewenergyJob</name>
+      <group>Newenergy</group>
+      <description>copy</description>
+      <job-type>QuartzDemo.QuartzJobs.CopyNewenergyDataJob,QuartzDemo</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>CopyNewenergyJobTrigger</name>
+        <group>Newenergy</group>
+        <job-name>CopyNewenergyJob</job-name>
+        <job-group>Newenergy</job-group>
+        <start-time>2017-03-02T00:00:00+08:00</start-time>
+        <cron-expression>0 0 0/1 * * ?</cron-expression>
+      </cron>
+    </trigger>-->
+
+    <!--违法数据 任务配置-->
+    <!--<job>
+      <name>CopyData</name>
+      <group>Test</group>
+      <description>CopyData</description>
+      <job-type>QuartzDemo.QuartzJobs.TestJob,Cm.TaskInfo</job-type>
+      <durable>true</durable>
+      <recover>false</recover>
+    </job>
+    <trigger>
+      <cron>
+        <name>CopyDataTrigger</name>
+        <group>Test</group>
+        <job-name>CopyData</job-name>
+        <job-group>Test</job-group>
+        <start-time>2017-03-02T00:00:00+08:00</start-time>
+        <cron-expression>0/9 * * * * ?</cron-expression>
+      </cron>
+    </trigger>-->
+
+  </schedule>
+</job-scheduling-data>
