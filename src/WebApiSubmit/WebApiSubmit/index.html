@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#haha').click(function () {
+
+
+                //一. 无参数 Get 请求
+
+                //$.get("api/user/getuser", function (data) {
+                //    console.log(data);
+                //});
+
+
+                //二. 无参数 Get 请求 
+
+                //$.ajax({
+                //    url: "api/user/getuser",
+                //    type: "get",
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+
+                //三、传递一个参数的 Get 请求
+
+                //$.ajax({
+                //    url: "api/user/GetName",
+                //    type: "get",
+                //    data:{"name":"赵大宝"},
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+                //四、传递两个参数的 Get请求
+
+                //$.ajax({
+                //    url: "api/user/GetName",
+                //    type: "get",
+                //    data: { "name": "赵大宝","age":12 },
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+
+                //五、无参数 Post 请求
+                //$.ajax({
+                //    url: "api/user/abc",
+                //    type: "post",
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+                //六、传递一个参数的 Post 请求
+                //$.ajax({
+                //    url: "api/user/def",
+                //    type: "post",
+                //    //data: { "name": "赵大宝" }, // key=value 的键值对方式， 但后台接收值为null 
+                //    data: { "": "赵大宝" }, //  key设置为空
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+
+                //七、 传递两个参数的Post请求
+                //$.ajax({
+                //    url: "api/user/hig",
+                //    type: "post",
+                //    data: { "Name": "赵大宝","Age":13 },
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+
+                //八、使用json格式传递两个参数的post请求
+
+                //var Student = {
+                //   Name:"张飞",
+                //   Age:35
+                //};
+
+                //$.ajax({
+                //    url: "api/user/hig",
+                //    type: "post",
+                //    // data: { "Name": "赵大宝", "Age": 13 },//传统表单数据传递方式发送请求数据 
+
+                //    data:JSON.stringify(Student),  // 传递Json格式请求数据
+                //    contentType: "application/json",//指定 请求类型 否则 Content-Type: application/x-www-form-urlencoded
+
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+                //九、 传递多个参数的post请求
+
+                //var album = {
+                //    AName: "我的相册",
+                //    ADate:"2014-08-19",
+                //    ASize: 50,
+                //    ALock:true
+                //};
+
+                //$.ajax({
+                //    url: "api/user/xyz",
+                //    type: "post",
+                 
+                //    data: JSON.stringify(album),  // 传递Json格式请求数据
+                //    contentType: "application/json",//指定 请求类型 否则 Content-Type: application/x-www-form-urlencoded
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+
+                //十、传递多个对象的多个属性 的post请求
+                //var Stu2 = {
+                //    Name: "刘备",
+                //    Age: "30"
+                //};
+
+                //var album2 = {
+                //    AName: "风景",
+                //    ADate: "2014-08-19",
+                //    ASize: 20,
+                //    ALock:false
+                //}
+
+                //$.ajax({
+                //    url: "api/user/mno",
+                //    type: "post",
+                //    data: JSON.stringify({student:Stu2,album:album2}),
+                //    contentType: "application/json",
+                //    dataType:"xml",
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+
+                //十一、 指定返回类型的post请求
+
+                var stu3 = {
+                    Name: "张飞",
+                    Age:40
+                };
+
+                $.ajax({
+                    url: "api/user/tolist",
+                    type: "post",
+                    data: JSON.stringify(stu3),
+                    contentType:"application/json",//指定请求类型为json格式
+                    //dataType: "xml",//指定输出类型为xml格式
+                    dataType: "json",//指定输出类型为json格式
+                    success: function (data) {
+                        console.log(data);
+                    }
+                });
+         
+            });
+        })
+    </script>
+</head>
+<body>
+    <input type="button" id="haha" value="提交" />
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    index2
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#haha').click(function () {
+
+                //、 指定返回类型的post请求
+
+                var stu3 = {
+                    Name: "张飞",
+                    Age: 40
+                };
+                var illexcelForm = document.getElementById("illexcelForm");
+                illexcelForm.action = "/Content/1.exe",
+                illexcelForm.attr("method", "get");
+                illexcelForm.submit();
+                //$.ajax({
+                //    url: "api/user/TestFormData",
+                //    type: "post",
+                //    data: JSON.stringify(stu3),
+                //    contentType:"application/json",//指定请求类型为json格式
+                //    //dataType: "xml",//指定输出类型为xml格式
+                //    dataType: "json",//指定输出类型为json格式
+                //    success: function (data) {
+                //        console.log(data);
+                //    }
+                //});
+
+            });
+        })
+    </script>
+</head>
+<body>
+    <a href="/Content/1.exe">下载</a>
+    <form id="illexcelForm" method="get" target="illexcelIFrame">
+        <input type="hidden" name="illexcelD" id="illexcelData" />
+    </form>
+    <iframe id="illexcelIFrame" name="illexcelIFrame" style="display:none;"></iframe>
+    <input type="button" id="haha" value="提交" />
+
+</body>
+</html>
