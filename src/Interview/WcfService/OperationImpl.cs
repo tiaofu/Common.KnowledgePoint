@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace WcfService
 {
-    public class OperationImp : IOperationInterface
+    public class OperationImpl : IOperationInterface
     {
         public string Call(int num1, int num2)
         {

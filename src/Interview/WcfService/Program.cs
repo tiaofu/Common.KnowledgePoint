@@ -26,7 +26,7 @@ namespace WcfService
             {
                 string url = "http://127.0.0.1:8889";
                 Uri baseAddress = new Uri(url);
-                ServiceHost host = new ServiceHost(typeof(OperationImp), baseAddress);
+                ServiceHost host = new ServiceHost(typeof(OperationImpl), baseAddress);
                 /**
                   WCF的终结点类型有很多种类 :
                   BasicHttpBinding: 用于把 WCF 服务当作 ASMX Web 服务。用于兼容旧的Web ASMX 服务（web service）。
