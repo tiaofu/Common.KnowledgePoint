@@ -64,7 +64,12 @@ namespace WcfClient
             else if (binding.ToLower() == "nettcpbinding")
             {
                 NetTcpBinding ws = new NetTcpBinding();
-                ws.MaxReceivedMessageSize = 65535000;
+                ws.MaxReceivedMessageSize = 2147483647;
+                ws.ReaderQuotas.MaxStringContentLength = 2147483647;
+                ws.CloseTimeout = new TimeSpan(0, 30, 0);
+                ws.OpenTimeout = new TimeSpan(0, 30, 0);
+                ws.ReceiveTimeout = new TimeSpan(0, 30, 0);
+                ws.SendTimeout = new TimeSpan(0, 30, 0);
                 ws.Security.Mode = SecurityMode.None;
                 bindinginstance = ws;
             }
