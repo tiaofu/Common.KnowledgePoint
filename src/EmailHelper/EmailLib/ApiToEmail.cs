@@ -5,9 +5,10 @@
  * Create: 2018/4/13 16:39:48
  * Modify: 2018/4/13 16:39:48
  * Blog: http://www.cnblogs.com/tiaoshuidenong/
- * Description: Email send by api
- * Description: 邮件服务器提供相关的api方式，这里使用的是 sendcloud 平台的，当然支持Smtp方式
- * Description: 支持匿名发送邮件 XX 当然这个功能可以通过自己搭建邮件服务器或者自己实现smtp来实现
+ * Description: 
+ *     Email send by api
+ *     邮件服务器提供相关的api方式，这里使用的是 sendcloud 平台的，当然支持Smtp方式
+ *     支持匿名发送邮件 XX 当然这个功能可以通过自己搭建邮件服务器或者自己实现smtp来实现
  *********************************************************/
 using System;
 using System.Collections.Generic;

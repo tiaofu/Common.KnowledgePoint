@@ -5,8 +5,9 @@
  * Create: 2018/4/13 16:39:48
  * Modify: 2018/4/13 16:39:48
  * Blog: http://www.cnblogs.com/tiaoshuidenong/
- * Description: Email send by api
- * Description: 邮件发送返回的结果提示
+ * Description: 
+ *     Email send by api
+ *     邮件发送返回的结果提示
  *********************************************************/
 using System.ComponentModel;
 
