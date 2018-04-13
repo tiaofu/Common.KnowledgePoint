@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailHelper", "EmailHosting\EmailHelper.csproj", "{A28341E7-9900-4694-8627-C6BC57BC3080}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailHosting", "EmailHosting\EmailHosting.csproj", "{A28341E7-9900-4694-8627-C6BC57BC3080}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailLib", "EmailLib\EmailLib.csproj", "{5FF925BF-0B64-4D0B-B6EF-8A970EF8A358}"
 EndProject
